@@ -1,0 +1,3 @@
+<view>
+  <calendar least-days="{{ leastDays }}" bind:calendarchange="onCalendarChange" />
+</view>

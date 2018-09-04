@@ -1,0 +1,82 @@
+page {
+  box-sizing: border-box;
+  color: #404040;
+  background-color: #edeef2;
+}
+
+.date-box {
+  font-size: 28rpx;
+  color: #404040;
+  background-color: #fff;
+}
+
+.date-box-hd {
+  display: flex;
+  padding: 28rpx 24rpx;
+  font-size: 28rpx;
+}
+
+.date-box-hd text {
+  flex: 1;
+  text-align: center;
+}
+
+.month-hd {
+  position: relative;
+  padding: 47rpx 0 30rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.year {
+  position: absolute;
+  top: 14rpx;
+  right: 36rpx;
+  bottom: 0;
+  margin: auto;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #ddd;
+}
+
+.days {
+  display: inline-block;
+  width: 100%;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+
+.day-row {
+  width: 100%;
+  padding: 0 24rpx;
+  margin-top: 60rpx;
+  box-sizing: border-box;
+}
+
+.days text {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 14.285%;
+  text-align: center;
+  padding: 30rpx 0;
+}
+
+.disable {
+  color: #cfcfcf;
+}
+
+.days text.active {
+  position: relative;
+}
+
+.days text.active::after {
+  content: "";
+  display: block;
+  height: 4rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5b97f0;
+}

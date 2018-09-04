@@ -1,0 +1,30 @@
+<view class="date-box">
+  <view class="date-box-hd gap-line">
+    <text>日</text>
+    <text>一</text>
+    <text>二</text>
+    <text>三</text>
+    <text>四</text>
+    <text>五</text>
+    <text>六</text>
+  </view>
+  <view class="date-box-con">
+    <view class="month" wx:for="{{ calendars }}" wx:key="{{ index }}">
+      <view class="month-hd">
+        <text>{{ item.month }} 月</text>
+        <text class="year">{{ item.year }}</text>
+      </view>
+      <view class="days">
+        <text wx:for="{{ item.placeholders }}" wx:key="{{ item }}"></text>
+        <text
+          wx:for="{{ item.days }}"
+          wx:key="{{ index }}"
+          wx:for-item="day"
+          data-timestamp="{{ day.timestamp }}"
+          data-disabled="{{ (day.text < curDay) && (item.month == curMonth + 1) }}"
+          bindtap="_chooseDay"
+          class="{{ (day.text < curDay) && (item.month == curMonth + 1) ? 'disable' : '' }} {{ (day.timestamp >= timeArr[0] && day.timestamp <= timeArr[1]) || (!timeArr[1] && timeArr[0] == day.timestamp) ? 'active' : '' }}">{{ day.text }}</text>
+      </view>
+    </view>
+  </view>
+</view>
