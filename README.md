@@ -1,7 +1,7 @@
 # 📅 小程序日历组件
 
 ## 概述
-这是一款简单易用的小程序日历组件，实现了选择开始时间和结束时间的功能。克隆 [maxrisk/calendar](https://github.com/maxrisk/calendar) 之后在微信开发者工具中打开查看示例。
+这是一款简单易用的小程序日历组件，实现了选择开始时间和结束时间的功能。克隆 [maxrisk/calendar](https://github.com/maxrisk/calendar) 之后可在微信开发者工具中打开查看示例。
 
 ---
 ![demo](https://www.minivote.cn/storage/images/demo.gif)
